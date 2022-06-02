@@ -1,0 +1,36 @@
+.introduction {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px 50px;
+  article {
+    padding-right: 20px;
+    h1,
+    p {
+      text-align: left;
+      font-size: 26px;
+    }
+  }
+  figure {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    article {
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
